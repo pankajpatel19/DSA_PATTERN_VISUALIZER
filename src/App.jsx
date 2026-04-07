@@ -20,6 +20,34 @@ import TopologicalSortVisualizer from "./TopologicalSort/TopologicalSortVisualiz
 import BacktrackingVisualizer from "./Backtracking/BacktrackingVisualizer";
 import TrieVisualizer from "./Trie/TrieVisualizer";
 import MatrixSearchVisualizer from "./BinarySearch/MatrixSearchVisualizer";
+
+// Array Questions
+import LargestElement from "./Array/LargestElement";
+import SecondLargest from "./Array/SecondLargest";
+import CheckSorted from "./Array/CheckSorted";
+import RemoveDuplicates from "./Array/RemoveDuplicates";
+import RotateArray from "./Array/RotateArray";
+import MoveZeros from "./Array/MoveZeros";
+import LinearSearch from "./Array/LinearSearch";
+import UnionArrays from "./Array/UnionArrays";
+import MissingNumber from "./Array/MissingNumber";
+import MaxConsecutiveOnes from "./Array/MaxConsecutiveOnes";
+import SingleNumber from "./Array/SingleNumber";
+import LongestSubarraySumK from "./Array/LongestSubarraySumK";
+import TwoSum from "./Array/TwoSum";
+import SortColors from "./Array/SortColors";
+import MajorityElement from "./Array/MajorityElement";
+import KadanesAlgorithm from "./Array/KadanesAlgorithm";
+import BuySellStock from "./Array/BuySellStock";
+import RearrangeBySign from "./Array/RearrangeBySign";
+import NextPermutation from "./Array/NextPermutation";
+import LeadersInArray from "./Array/LeadersInArray";
+import LongestConsecutiveSequence from "./Array/LongestConsecutiveSequence";
+import SetMatrixZeroes from "./Array/SetMatrixZeroes";
+import RotateImage from "./Array/RotateImage";
+import SpiralMatrix from "./Array/SpiralMatrix";
+import PascalsTriangle from "./Array/PascalsTriangle";
+
 import { ChevronRight, Code2, Menu, X } from "lucide-react";
 
 function App() {
@@ -64,6 +92,35 @@ function App() {
         return <BacktrackingVisualizer />;
       case "trie":
         return <TrieVisualizer />;
+      
+      // Array Questions
+      case "arr-largest": return <LargestElement />;
+      case "arr-second-largest": return <SecondLargest />;
+      case "arr-check-sorted": return <CheckSorted />;
+      case "arr-remove-duplicates": return <RemoveDuplicates />;
+      case "arr-rotate-one":
+      case "arr-rotate-d": return <RotateArray />;
+      case "arr-move-zeros": return <MoveZeros />;
+      case "arr-linear-search": return <LinearSearch />;
+      case "arr-union": return <UnionArrays />;
+      case "arr-missing": return <MissingNumber />;
+      case "arr-max-ones": return <MaxConsecutiveOnes />;
+      case "arr-single-number": return <SingleNumber />;
+      case "arr-longest-subarray-k": return <LongestSubarraySumK />;
+      case "arr-two-sum": return <TwoSum />;
+      case "arr-sort-colors": return <SortColors />;
+      case "arr-majority-element": return <MajorityElement />;
+      case "arr-kadanes": return <KadanesAlgorithm />;
+      case "arr-stocks": return <BuySellStock />;
+      case "arr-rearrange-sign": return <RearrangeBySign />;
+      case "arr-next-permutation": return <NextPermutation />;
+      case "arr-leaders": return <LeadersInArray />;
+      case "arr-longest-consecutive": return <LongestConsecutiveSequence />;
+      case "arr-set-matrix-zero": return <SetMatrixZeroes />;
+      case "arr-rotate-image": return <RotateImage />;
+      case "arr-spiral-matrix": return <SpiralMatrix />;
+      case "arr-pascals-triangle": return <PascalsTriangle />;
+
       default:
         return <div className="placeholder">Select a pattern</div>;
     }
